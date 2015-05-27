@@ -10,11 +10,10 @@ import org.json.JSONException;
 public class CityLocalizer {
 	public CityLocalizer(){}
 	
+	
 	/**
-	 * main methods of the program
-	 * @param args contains the string use to query the web server
-	 * @throws IOException handles IOExecptions
-	 * @throws JSONException handles JSON exceptions
+	 * main method of the program
+	 * @param args contains the input string
 	 */
 	public static void main(String[] args) {
 		CityLocalizer goEuro = new CityLocalizer();
@@ -25,6 +24,11 @@ public class CityLocalizer {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * Core algorithm of the program
+	 * @param args arg of the main method
+	 * @throws IOException
+	 */
 	public void go(String[] args) throws IOException{
 		if(args.length > 0){
 			Querry querry = new Querry(args[0]);
